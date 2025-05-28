@@ -1,0 +1,72 @@
+body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .slide {
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .cvv-highlight {
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .security-icon {
+            animation: shield-glow 3s ease-in-out infinite;
+        }
+        @keyframes shield-glow {
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.5)); }
+            50% { filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.8)); }
+        }
+        .vision-2030 {
+            background: linear-gradient(45deg, #00a652, #007238);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .fraud-stats {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        }
+        .solution-bg {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+        .tech-bg {
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+        }
+        .market-bg {
+            background: linear-gradient(135deg, #fa709a, #fee140);
+        }
+        .benefits-bg {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        .business-bg {
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+        .number-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CVV - Investor Pitch Deck</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Cover Slide -->
+    <div class="slide gradient-bg text-white flex items-center justify-center">
+        <div class="text-center max-w-4xl mx-auto">
+            <div class="mb-8">
+                <i class="fas fa-shield-alt text-8xl mb-6 security-icon"></i>
+            </div>
+            <h1 class="text-7xl font-bold mb-6">Dynamic CVV</h1>
+            <p class="text-3xl mb-12 font-light">"The future of card security — Temporary CVV for every transaction."</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-blur-sm">
+                    <i class="fab fa-whatsapp text-4xl mb-4"></i>
+                    <p class="text-xl font-semibold">WhatsApp</p>
+                    <p class="text-lg">+966 531333133</p>
+
+</div>
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-blur-sm">
+                    <i class="fas fa-envelope text-4xl mb-4"></i>
+                    <p class="text-xl font-semibold">Email</p>
+                    <p class="text-lg">alwleed-vip@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Slide -->
+    <div class="slide fraud-stats text-white flex items-center">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-6xl font-bold mb-8">The Problem</h2>
+                <p class="text-2xl mb-8 leading-relaxed">
+                    Most online card fraud starts with a small static number printed on the card — the <span class="cvv-highlight font-bold">CVV</span>.
+                </p>
+                <p class="text-xl mb-12 text-gray-200">
+                    Once leaked, it can be reused for unlimited unauthorized purchases.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-20 p-6 rounded-lg text-center backdrop-blur-sm">
+                        <div class="text-4xl font-bold mb-2">$32B</div>
+                        <div class="text-sm">Global Card Fraud (2023)</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-6 rounded-lg text-center backdrop-blur-sm">
+                        <div class="text-4xl font-bold mb-2">78%</div>
+                        <div class="text-sm">CNP Fraud Rate</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-white p-8 rounded-xl shadow-2xl card-animation mx-auto max-w-sm">
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-48 rounded-lg mb-4 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 text-white">
+                            <div class="text-xs">BANK CARD</div>
+                            <div class="text-lg font-bold">**  ** 1234</div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 text-white">
+                            <div class="text-xs">CVV</div>
+                            <div class="text-lg font-bold bg-red-500 px-2 py-1 rounded">123</div>
+                        </div>
+                    </div>
+                    <p class="text-red-600 font-semibold">Static CVV = Security Risk</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Slide -->
+    <div class="slide solution-bg text-white flex items-center">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-2xl mx-auto max-w-sm mb-8">
+                    <div class="bg-gradient-to-r from-green-500 to-blue-500 h-48 rounded-lg mb-4 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 text-white">
+                            <div class="text-xs">SECURE CARD</div>
+                            <div class="text-lg font-bold">**  ** 1234</div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 text-white text-center">
+                            <div class="text-xs">NO CVV</div>
+                            <i class="fas fa-mobile-alt text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl max-w-xs mx-auto">
+                    <div class="bg-blue-600 p-4 rounded-lg text-center">
+
+
+<i class="fas fa-mobile-alt text-3xl mb-2"></i>
+                        <div class="text-xs mb-2">Temporary CVV</div>
+                        <div class="text-2xl font-bold">847</div>
+                        <div class="text-xs mt-2">Expires in 2:34</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-1 lg:order-2">
+                <h2 class="text-6xl font-bold mb-8">The Solution</h2>
+                <p class="text-2xl mb-8 leading-relaxed">
+                    Dynamic CVV eliminates the static code and replaces it with a <span class="font-bold">one-time-use CVV</span> generated securely inside your banking app.
+                </p>
+                <p class="text-xl mb-12 text-blue-100">
+                    It vanishes after use or within minutes — making fraud nearly impossible.
+                </p>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <i class="fas fa-shield-alt text-4xl mb-2"></i>
+                        <div class="text-sm">Secure</div>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-clock text-4xl mb-2"></i>
+                        <div class="text-sm">Temporary</div>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-ban text-4xl mb-2"></i>
+                        <div class="text-sm">No Reuse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Slide -->
+    <div class="slide tech-bg text-white flex items-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-6xl font-bold mb-16 text-center">How It Works</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="number-circle mx-auto">1</div>
+                    <i class="fas fa-mobile-alt text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Open Bank App</h3>
+                    <p class="text-gray-200">User opens their secure banking application</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="number-circle mx-auto">2</div>
+                    <i class="fas fa-hand-point-up text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Request CVV</h3>
+                    <p class="text-gray-200">Tap to request a temporary CVV code</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="number-circle mx-auto">3</div>
+                    <i class="fas fa-cogs text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Generate Code</h3>
+                    <p class="text-gray-200">Secure algorithm creates unique CVV</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="number-circle mx-auto">4</div>
+                    <i class="fas fa-stopwatch text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Auto Expire</h3>
+                    <p class="text-gray-200">Code expires after use or timeout</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white bg-opacity-20 p-8 rounded-lg backdrop-blur-sm text-center">
+                <h3 class="text-2xl font-bold mb-4">Advanced Security Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <i class="fas fa-key text-3xl mb-2"></i>
+                        <p>256-bit Encryption</p>
+
+</div>
+                    <div>
+                        <i class="fas fa-fingerprint text-3xl mb-2"></i>
+                        <p>Biometric Auth</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-server text-3xl mb-2"></i>
+                        <p>HSM Protected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Security Compliance Slide -->
+    <div class="slide bg-gray-900 text-white flex items-center">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-6xl font-bold mb-12">Security Compliance</h2>
+            <p class="text-2xl mb-16 text-gray-300">Fully aligned with global security standards</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-blue-900 p-8 rounded-lg hover-scale">
+                    <i class="fas fa-certificate text-5xl mb-4 text-blue-400"></i>
+                    <h3 class="text-2xl font-bold mb-4">PCI-DSS</h3>
+                    <p class="text-gray-300">Payment Card Industry Data Security Standard compliant</p>
+                </div>
+                
+                <div class="bg-green-900 p-8 rounded-lg hover-scale">
+                    <i class="fas fa-shield-alt text-5xl mb-4 text-green-400"></i>
+                    <h3 class="text-2xl font-bold mb-4">EMVCo</h3>
+                    <p class="text-gray-300">EMV secure payment technology standards</p>
+                </div>
+                
+                <div class="bg-purple-900 p-8 rounded-lg hover-scale">
+                    <i class="fas fa-lock text-5xl mb-4 text-purple-400"></i>
+                    <h3 class="text-2xl font-bold mb-4">ISO 9564</h3>
+                    <p class="text-gray-300">International PIN management and security</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-800 p-8 rounded-lg">
+                <h3 class="text-3xl font-bold mb-6">Advanced Security Architecture</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <i class="fas fa-user-shield text-3xl mb-2 text-blue-400"></i>
+                        <p>Multi-Factor Authentication</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-database text-3xl mb-2 text-green-400"></i>
+                        <p>Encrypted Data Storage</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-network-wired text-3xl mb-2 text-yellow-400"></i>
+                        <p>Secure API Gateway</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-eye text-3xl mb-2 text-red-400"></i>
+                        <p>Real-time Monitoring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Opportunity Slide -->
+    <div class="slide market-bg text-white flex items-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-6xl font-bold mb-12 text-center">Market Opportunity</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8">
+                        <h3 class="text-3xl font-bold mb-4">Global Market</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg backdrop-blur-sm">
+                                <div class="flex justify-between items-center">
+                                    <span>Digital Payments Market</span>
+
+<span class="font-bold">$8.49T by 2026</span>
+                                </div>
+                            </div>
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg backdrop-blur-sm">
+                                <div class="flex justify-between items-center">
+                                    <span>Card Fraud Prevention</span>
+                                    <span class="font-bold">$35.6B by 2027</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Saudi Arabia Focus</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg backdrop-blur-sm">
+                                <div class="flex justify-between items-center">
+                                    <span>Digital Banking Growth</span>
+                                    <span class="font-bold">+125% YoY</span>
+                                </div>
+                            </div>
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg backdrop-blur-sm">
+                                <div class="flex justify-between items-center">
+                                    <span>Fintech Investment</span>
+                                    <span class="font-bold">$2.1B (2023)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <canvas id="marketChart" width="400" height="300"></canvas>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-bold mb-4 vision-2030">Aligned with Saudi Vision 2030</h3>
+                <p class="text-xl">Supporting digital transformation and financial technology innovation</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Slide -->
+    <div class="slide benefits-bg text-gray-800 flex items-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-6xl font-bold mb-16 text-center">Key Benefits</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover-scale">
+                    <i class="fas fa-ban text-5xl mb-4 text-red-500"></i>
+                    <h3 class="text-xl font-bold mb-3">No Printed CVV</h3>
+                    <p>Eliminates physical security vulnerabilities</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover-scale">
+                    <i class="fas fa-chart-line text-5xl mb-4 text-green-500"></i>
+                    <h3 class="text-xl font-bold mb-3">Fraud Reduction</h3>
+                    <p>Up to 95% reduction in CNP fraud</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover-scale">
+                    <i class="fas fa-puzzle-piece text-5xl mb-4 text-blue-500"></i>
+                    <h3 class="text-xl font-bold mb-3">Easy Integration</h3>
+                    <p>Seamless banking app integration</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover-scale">
+                    <i class="fas fa-heart text-5xl mb-4 text-pink-500"></i>
+                    <h3 class="text-xl font-bold mb-3">Customer Trust</h3>
+                    <p>Enhanced security builds loyalty</p>
+
+</div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-green-600 to-green-800 text-white p-8 rounded-lg text-center">
+                <h3 class="text-3xl font-bold mb-4">
+                    <i class="fas fa-rocket mr-3"></i>
+                    Supports Saudi Vision 2030
+                </h3>
+                <p class="text-xl">Digital Transformation • Financial Innovation • Cybersecurity Excellence</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Business Model Slide -->
+    <div class="slide business-bg text-gray-800 flex items-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-6xl font-bold mb-16 text-center">Business Model</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-3xl font-bold mb-8">Revenue Streams</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-handshake text-3xl text-blue-500 mr-4"></i>
+                                <h4 class="text-xl font-bold">B2B Licensing</h4>
+                            </div>
+                            <p>Direct licensing to banks and financial institutions</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-code text-3xl text-green-500 mr-4"></i>
+                                <h4 class="text-xl font-bold">API Integration</h4>
+                            </div>
+                            <p>White-labeled UI and secure API solutions</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-shield-alt text-3xl text-purple-500 mr-4"></i>
+                                <h4 class="text-xl font-bold">Insurance Partnership</h4>
+                            </div>
+                            <p>Cyber insurance integration and partnerships</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold mb-8">Pricing Strategy</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-2">Enterprise License</h4>
+                            <div class="text-3xl font-bold mb-2">$50K - $200K</div>
+                            <p>Annual licensing fee based on transaction volume</p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-2">Per-Transaction</h4>
+                            <div class="text-3xl font-bold mb-2">$0.001 - $0.005</div>
+                            <p>Micro-fees for high-volume institutions</p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-2">SaaS Subscription</h4>
+                            <div class="text-3xl font-bold mb-2">$5K - $25K/month</div>
+                            <p>Monthly subscription with support included</p>
+                        </div>
+
+</div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-800 text-white p-8 rounded-lg text-center">
+                <h3 class="text-3xl font-bold mb-6">Market Entry Strategy</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <i class="fas fa-flag text-4xl mb-3 text-green-400"></i>
+                        <h4 class="text-xl font-bold mb-2">Phase 1: Saudi Arabia</h4>
+                        <p>Local banks and Vision 2030 alignment</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-globe-africa text-4xl mb-3 text-blue-400"></i>
+                        <h4 class="text-xl font-bold mb-2">Phase 2: GCC</h4>
+                        <p>Regional expansion across Gulf states</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-globe text-4xl mb-3 text-purple-400"></i>
+                        <h4 class="text-xl font-bold mb-2">Phase 3: Global</h4>
+                        <p>International markets and partnerships</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
